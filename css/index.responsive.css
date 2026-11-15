@@ -1,0 +1,188 @@
+
+@media (max-width: 1300px) {
+  
+  nav .container .links ul {
+    position: absolute;
+    background-color: var(--second-color);
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    width: 80%;
+    height: 0;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0px 0px;
+    column-gap: 0;
+    row-gap: 20px;
+    font-size: 20px;
+    transition-duration: 1s;
+    overflow: hidden;
+  }
+  nav .container .burger:focus + ul {
+    height: unset;
+    padding: 20px 0px;
+  }
+  nav .container .logo {
+    width: 20%;
+  }
+  nav .container .burger {
+    width: 50px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  nav .container .burger span {
+    display: block;
+    width: 60%;
+    height: 3px;
+    background-color: var(--main-color);
+  }
+
+
+  #About .container {
+    flex-wrap: wrap;
+  }
+  #About .container .part {
+    width: 100%;
+  }
+  #About .container .part1 .frame {
+    width: 280px;
+  }
+  #About .container .part1 {
+    margin-bottom: 50px;
+  }
+  #About .container .part2 .info .col {
+    flex-basis: 100%;
+  }
+  #About .container .part2 .info .buttons button {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  #Services .row .col {
+    width: 100%;
+  }
+
+  #Portofolio .content .box {
+    width: 100%;
+  }
+
+  
+  #Blog .content .box {
+    width: 100%;
+  }
+  #Blog .content .box .item {
+    width: initial;
+  }
+  #Blog .content .box:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+
+  #ContactUs form {
+    width: 100%;
+  }
+  #ContactUs form .box:nth-of-type(1),
+  #ContactUs form .box:nth-of-type(2) {
+    width: 100%;
+  }
+  #ContactUs form .box:nth-of-type(1) .item,
+  #ContactUs form .box:nth-of-type(2) .item {
+    margin: 0;
+  }
+  #ContactUs form button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 371px) and (max-width: 1300px) {
+  nav .container .logo {
+    width: 15%;
+  }
+  
+  #Services .row .item {
+    width: 280px;
+    margin: auto;
+  }
+  #Services .row .col .item {
+
+  margin: 10px auto;
+}
+}
+
+
+@media (min-width: 577px) and (max-width: 1300px) {
+  nav .container .logo {
+    width: 10%;
+  }
+  #About .container .part2 .info .col {
+    flex-basis: 50%;
+  }
+  
+  #Services .row .col {
+    width: 50%;
+  }
+  #Services .row .item {
+    width: initial;
+    margin: 10px;
+  }
+  #Portofolio .content .box {
+    width: 50%;
+  }
+  
+  #Blog .content .box {
+    width: 50%;
+  }
+  #Blog .content .box .item {
+    width: initial;
+    margin: 0 10px;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1300px) {
+  nav .container .logo {
+    width: 5%;
+  }
+  #Services .row .item {
+    width: 280px;
+    margin: auto;
+  }
+  #Blog .content .box .item {
+    width: 280px;
+    margin: auto;
+  }
+  #ContactUs form {
+    width: 80%;
+  }
+  #ContactUs form .box:nth-of-type(1),
+  #ContactUs form .box:nth-of-type(2) {
+    width: 50%;
+  }
+  #ContactUs form .box:nth-of-type(1) .item {
+    margin-right: 5px;
+  }
+  #ContactUs form .box:nth-of-type(2) .item {
+    margin-left: 5px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+  #About .container .part2 .info .col h5,
+  #About .container .part2 .info .col p {
+    font-size: 12px;
+  }
+  #Portofolio .content .box {
+    width: 33.33%;
+  }
+  #Blog .content .box {
+    width: 33.33%;
+  }
+}
